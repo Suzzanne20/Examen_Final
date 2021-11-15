@@ -1,0 +1,96 @@
+<!--Suzzanne Acevedo Morales-->
+<!--Carnet: 0909-21-10857-->
+
+<html>
+<head>
+    <title>P&P Services</title>
+        <!--style-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!--Css-->
+        <link rel="stylesheet" type="text/css" href="Ejercicio 1/Style/Style.css" th:href="@{/Style/Style.css}">
+</head>
+<body>
+    <!--Script-->
+    <script src="envio script.js"></script>
+    
+    <div class="modal-dialog text-center">
+        <div class="col-sm8 princ">
+            <div class="modal-content">
+              <div class="col-12 ">
+                <h3 class="modal-dialog text-center">P&P PAQUETERIA</h3>
+                <p class="modal-dialog text-center">Tus Paquetes hasta la puerta de tu casa</p>
+                <img class="logo" src="https://images.vexels.com/media/users/3/146451/isolated/preview/d03c9de18db226a823d5adb337782f89-caja-abierta-con-carteles-de-paquete.png" height="250px">
+              </div>
+
+              <form class="col-12" id="Sucursal">
+                <h5>Sucursales disponibles para Envios</h5>
+                <input type="radio" value="Guatemala" name="radsucu" id="radsucu1" checked> Guatemala
+                <input type="radio" value="Izabal" name="radsucu" id="radsucu2"> Izabal
+                <br> 
+                <input type="radio" value="Chiquimula" name="radsucu" id="radsucu3"> Chiquimula   
+                <input type="radio" value="Peten" name="radsucu" id="radsucu4"> Peten
+                <br>
+                <input type="radio" value="Retalhuleu" name="radsucu" id="radsucu5"> Retalhuleu
+              </form>
+              <h5>Tipo de mercaderia a enviar</h5>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Documentos
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>El precio para enviar Documentos es de:</p>
+                      <h3>Q. 40</h3>
+                      <br>
+                      <button type="button" class="btn btn-dark" name="pulsar" onclick="alert( docu(1,2) );">Realizar Envio</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Paqueteria
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <form id="conoces">
+                        <br>
+                        <h5>Conoces el peso de tu mercaderia?</h5>
+                        <div class="input-group"></div>
+                          <button type="button" class="btn btn-warning col-2" name="pulsar" onclick="location.href='PaqSI.html'" >Si</button>
+                          <button type="button" class="btn btn-dark col-2" name="pulsar" onclick="location.href='PaqNO.html'" >No</button>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
